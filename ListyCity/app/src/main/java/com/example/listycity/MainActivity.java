@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 String newCity = enterText.getText().toString();
                 dataList.add(newCity);
                 cityAdapter.notifyDataSetChanged();
+                enterText.setText("");
                 enterText.setVisibility(View.GONE);
                 confirmButton.setVisibility(View.GONE);
             }
